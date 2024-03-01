@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js"></script> 
+    </head>
+    <body onload="doAllThingsToAllBoxes();">
+        <div class="grid-container">
+            <div>
+                <!--Interaction-->
+                <div class="grid-item" id="D1">
+                    <button class="roundbt bt-red" id="B1" type="button" onclick="d1Red();"></button>
+                    <button class="roundbt bt-blue" id="B2" type="button" onclick="d1Blue();"></button>
+                    <button class="roundbt bt-green" id="B3"type="button" onclick="d1Green();"></button>
+                </div>
+                <!--Time-->
+                <div class="grid-item" id="D4">
+                    <table>
+                        <tr><td><span id ='text_to_grow'>I will grow or shrink over time</span></td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td><label id='cntr'>0</label></td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td><button type = "button" width='200' height='50' onclick="runFontChangeForTenSeconds();">RESTART</button></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <!--Loop-->
+                <div class="grid-item" id="D2">2</div>
+                <!--Input-->
+                <div class="grid-item" id="D5">
+                    <table>
+                        <tr><td><H1>Input</H1></td></tr>
+                        <tr><td>Let's see how many characters will you type in the field below. Please type something and hit SUBMIT</td></tr>
+                        <tr><td><label id ='result'>well?</label></td></tr>
+                        <tr><td><input type='text' id='inp_fld'  placeholder="Type something!"/></td></tr>
+                        <tr><td><button type = "button" width='200' height='50' onclick="calculateAndReportNumberOfCharacters();">SUBMIT</button></td></tr>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <!--Condition-->
+                <div class="grid-item" id="D3">
+                    <table>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                        <tr><td>&nbsp;</td><td><button type = "button" width='200' height='50' onclick="pickMyColorBasedOnSeconds();">re-think my color</button></td><td>&nbsp;</td></tr>
+                        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+                    </table>
+                </div>
+                <!--Console-->
+                <div class="grid-item" id="D6">
+                    <table>
+                        <tr><td><H1>Console</H1></td></tr>
+                        <tr><td><label id ='consol'>...</label></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div> 
+    
+    </body>
+    </html> 

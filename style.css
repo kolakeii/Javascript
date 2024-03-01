@@ -1,0 +1,35 @@
+/*6-part Grid*/
+.grid-container {
+    display: flex;
+  }
+.grid-item {
+    border-style: solid;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /*color button properties*/
+  .bg-red {
+    background-color:red;
+  }
+  .bg-blue {
+    background-color:blue;
+  }
+  .bg-pink {
+    background-color:pink;
+  }
+  .bg-yellow {
+    background-color:yellow;
+  }
+  .roundbt{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .bt-red{background-color: rgb(255, 108, 108);}
+  .bt-green{background-color: rgb(138, 240, 135);}
+  .bt-blue{background-color: rgb(149, 195, 255);}
